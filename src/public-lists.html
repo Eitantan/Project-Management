@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management for Free!</title>
+  <meta name="description" content="Project Management for free!">
+  <meta name="author" content="Eitan Alperstein">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+  <script src="/src/index.js"></script>
+  <button onclick="makePrivate()">Make this site's SEO unsearchable</button>
+</body>
+</html>
+<script type="text/javascript">
+  function makePrivate(){
+    var meta = document.createElement("META");
+    meta.setAttribute("name", "robots")
+    meta.setAttribute("content", "noindex, nofollow")
+    document.head.appendChild(meta);  
+  }
+</script>
